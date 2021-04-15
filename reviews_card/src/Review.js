@@ -44,7 +44,7 @@ const Review = ()=> {
     }
 
     return <>
-    <div className="container">
+    <article>
         <div className="review">
                 <div className="img-container ">
                     <img src={image} alt={name} className="person-img" />
@@ -63,7 +63,7 @@ const Review = ()=> {
                 <button className="next-btn" onClick={nextBtn}>next</button>
                 <div><button className="random-btn" onClick={randomBtn}>Surprise me</button></div>
         </div>
-    </div>
+    </article>
     
     </>
 }
