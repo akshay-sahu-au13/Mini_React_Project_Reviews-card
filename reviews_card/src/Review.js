@@ -20,18 +20,28 @@ const Review = ()=> {
 
     const nextBtn = ()=> {
         setIndex(()=>{
-            index += 1;
-            return checkIndex(index)
+            let newIndex = index + 1;
+            return checkIndex(newIndex)
         })
     }
 
     const prevBtn = () => {
         setIndex(() => {
-            index -= 1;
-            return checkIndex(index)
+            let newIndex = index - 1;
+            return checkIndex(newIndex)
         })
     }
-    
+
+    const randomBtn = ()=> {
+        setIndex(()=>{
+            let newIndex = Math.floor(Math.random() * data.length);
+            if (newIndex === index){
+                newIndex += 1;
+            }
+            return newIndex;
+        })
+    }
+
     return <>
     <div className="container">
         <div className="review">
@@ -48,9 +58,9 @@ const Review = ()=> {
                 <div className="info">
                     {text}
                 </div>
-                <button className="prev-btn" onClick={nextBtn}>prev</button>
-                <button className="next-btn">next</button>
-                <div><button className="random-btn">Surprise me</button></div>
+                <button className="prev-btn" onClick={prevBtn}>prev</button>
+                <button className="next-btn" onClick={nextBtn}>next</button>
+                <div><button className="random-btn" onClick={randomBtn}>Surprise me</button></div>
         </div>
     </div>
     
