@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 
 import data from './data';
+////// NEED TO ADD STYLING AND REACT ICONS /////
 
 const Review = ()=> {
 
