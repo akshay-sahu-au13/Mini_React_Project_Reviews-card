@@ -59,8 +59,8 @@ const Review = ()=> {
                 <div className="info">
                     {text}
                 </div>
-                <button className="prev-btn" onClick={prevBtn}>AiOutlineLeft</button>
-                <button className="next-btn" onClick={nextBtn}>AiOutlineRight</button>
+                <button className="prev-btn" onClick={prevBtn}>{AiOutlineLeft}</button>
+                <button className="next-btn" onClick={nextBtn}>{AiOutlineRight}</button>
                 <div><button className="random-btn" onClick={randomBtn}>Surprise me</button></div>
         </div>
     </article>
