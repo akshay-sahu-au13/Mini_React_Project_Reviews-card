@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 import data from './data';
 ////// NEED TO ADD STYLING AND REACT ICONS /////
-
+import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";
 const Review = ()=> {
 
     const [index, setIndex] = useState(0);
@@ -59,8 +59,8 @@ const Review = ()=> {
                 <div className="info">
                     {text}
                 </div>
-                <button className="prev-btn" onClick={prevBtn}>prev</button>
-                <button className="next-btn" onClick={nextBtn}>next</button>
+                <button className="prev-btn" onClick={prevBtn}>AiOutlineLeft</button>
+                <button className="next-btn" onClick={nextBtn}>AiOutlineRight</button>
                 <div><button className="random-btn" onClick={randomBtn}>Surprise me</button></div>
         </div>
     </article>
